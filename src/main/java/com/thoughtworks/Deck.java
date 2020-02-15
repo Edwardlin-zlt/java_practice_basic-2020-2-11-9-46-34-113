@@ -17,15 +17,16 @@ public class Deck {
         r = new Random();
     }
 
+    public Deck(ArrayList<Card> cards) {
+        this.cards = cards;
+        r = new Random();
+    }
+
     public ArrayList<Card> getCards() {
         return cards;
     }
 
     public void setCards(ArrayList<Card> cards) {
-        this.cards = cards;
-    }
-
-    public Deck(ArrayList<Card> cards) {
         this.cards = cards;
     }
 

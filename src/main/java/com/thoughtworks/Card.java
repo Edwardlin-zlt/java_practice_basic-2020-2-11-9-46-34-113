@@ -33,7 +33,8 @@ public class Card {
         this.suit = suit;
     }
 
-    public String cardName() {
+    @Override
+    public String toString() {
         String point;
         switch (this.point) {
             case 1:
@@ -52,10 +53,5 @@ public class Card {
                 point = this.point + "";
         }
         return suit.getName() + point + "";
-    }
-
-    @Override
-    public String toString() {
-        return this.cardName();
     }
 }

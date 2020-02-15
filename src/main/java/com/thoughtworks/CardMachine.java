@@ -25,7 +25,7 @@ public class CardMachine {
         this.deck = deck;
     }
 
-    public void newDeck() {
+    public void renewDeck() {
         deck = new Deck();
     }
 
@@ -39,7 +39,7 @@ public class CardMachine {
             ArrayList<Card> outCards = deck.drawCards(n);
             String outInfo = "";
             for (int i = 0; i < outCards.size(); i++) {
-                outInfo += outCards.get(i).cardName() + " ";
+                outInfo += outCards.get(i).toString() + " ";
             }
             System.out.println(outInfo);
         }
